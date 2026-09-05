@@ -1,0 +1,86 @@
+{
+  "$description": "Acento por vertical. Una vertical = un acento, tomado de la capa del brandboard. El núcleo Maestry (color.ink, color.gold, color.purple en core.json) NUNCA cambia. El acento vive en exactamente 4 lugares: chip de vertical, relleno de progreso activo, filete de dato en material comercial, y capa del logo. Fuente: sección '02 · Color → Acento por vertical' del Design System Maestry.dc.html.",
+  "$usageRule": "La capa de industria vive en el logotipo y en el encabezado de la app. No se propaga a fondos, tarjetas ni botones: la interfaz conserva el negro y el oro de Maestry.",
+  "verticals": {
+    "horeca": {
+      "name": "HORECA",
+      "status": "en operación · primera vertical",
+      "accent": "#D69600",
+      "accentLight": "#F0BE3A",
+      "accentSoft": "rgba(214,150,0,0.16)",
+      "logoLayerAsset": null,
+      "notes": "Hereda paleta ya en uso en HORECA (Super Meseros / Super Bites): ocre #D69600, chocolate #341A04, crema #FFFCF2. Estos 3 valores son propios de la vertical, no del núcleo — ver themes/light.json para su uso como accent/action invertido en tema claro."
+    },
+    "tenderos": {
+      "name": "Tenderos",
+      "status": "futura",
+      "accent": "#1E63C8",
+      "accentLight": "#3B87E8",
+      "accentSoft": "rgba(30,99,200,0.18)",
+      "logoLayerAsset": "assets/industries/maestry_industria_01_tenderos_azul.png"
+    },
+    "ferreteros": {
+      "name": "Ferreteros",
+      "status": "futura",
+      "accent": "#178C4E",
+      "accentLight": "#2FB673",
+      "accentSoft": "rgba(23,140,78,0.18)",
+      "logoLayerAsset": "assets/industries/maestry_industria_02_ferreteros_verde.png"
+    },
+    "fuerza-ventas": {
+      "name": "Fuerza de ventas",
+      "status": "futura",
+      "accent": "#C42B2B",
+      "accentLight": "#E05252",
+      "accentSoft": "rgba(196,43,43,0.18)",
+      "logoLayerAsset": "assets/industries/maestry_industria_03_fuerzas_ventas_rojo.png"
+    },
+    "mostrador": {
+      "name": "Servicio de mostrador",
+      "status": "futura",
+      "accent": "#E06A1B",
+      "accentLight": "#F08A3A",
+      "accentSoft": "rgba(224,106,27,0.18)",
+      "logoLayerAsset": "assets/industries/maestry_industria_04_servicio_mostrador_naranja.png",
+      "$discrepancy": "El asset de la capa de industria (sección 09) muestra el color #D6690A en su ficha, distinto al token oficial #E06A1B definido en la sección 02 'Acento por vertical'. Se usó el valor de la sección 02 (la sección de tokens) como fuente de verdad; verificar contra el arte final."
+    },
+    "belleza": {
+      "name": "Consultoras de belleza",
+      "status": "futura",
+      "accent": "#C41E63",
+      "accentLight": "#E0447F",
+      "accentSoft": "rgba(196,30,99,0.18)",
+      "logoLayerAsset": "assets/industries/maestry_industria_05_consultoras_belleza_rosa.png"
+    },
+    "farmacia": {
+      "name": "Farmacéuticos",
+      "status": "futura",
+      "accent": "#0E8C8C",
+      "accentLight": "#22ABAB",
+      "accentSoft": "rgba(14,140,140,0.18)",
+      "logoLayerAsset": "assets/industries/maestry_industria_06_farmaceuticos_teal.png"
+    },
+    "educacion": {
+      "name": "Educación",
+      "status": "futura",
+      "accent": "#A6741F",
+      "accentLight": "#C9922E",
+      "accentSoft": "rgba(166,116,31,0.18)",
+      "logoLayerAsset": "assets/industries/maestry_industria_07_educacion_dorado.png",
+      "$discrepancy": "El asset de la capa de industria (sección 09) muestra el color #D69600 en su ficha — idéntico al acento de HORECA — mientras que la sección 02 define el token oficial de Educación como #A6741F (bronce/dorado oscuro, distinto de HORECA). Parece un error de origen en el documento (posible copy-paste). Se usó el valor de la sección 02; verificar con diseño antes de producción."
+    },
+    "logistica": {
+      "name": "Logística",
+      "status": "futura",
+      "accent": "#8A8F98",
+      "accentLight": "#B4BAC4",
+      "accentSoft": "rgba(138,143,152,0.18)",
+      "logoLayerAsset": "assets/industries/maestry_industria_08_logistica_plata.png",
+      "$discrepancy": "El asset de la capa de industria (sección 09) muestra el color #9AA0A6 en su ficha, ligeramente distinto al token oficial #8A8F98 de la sección 02. Diferencia menor, probablemente por muestreo del arte; se usó el valor de la sección 02."
+    }
+  },
+  "future": {
+    "$description": "Plantilla para verticales aún no definidas.",
+    "rule": "1 acento, contraste AA ≥4.5:1 sobre ink-900 y sobre paper/50."
+  }
+}

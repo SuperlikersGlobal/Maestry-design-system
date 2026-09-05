@@ -1,0 +1,101 @@
+{
+  "$description": "Lenguaje de progresión (sección '06 · Progresión'). Seis rangos, del oficio aprendido al oficio dominado. El color avanza de gris a púrpura y culmina en oro: el oro no se reparte, se gana. Nombres de oficio, no de videojuego — marcados como propuesta del equipo de diseño, pendientes de confirmar contra nomenclatura ya usada en HORECA (ver 09-notes.md).",
+  "$pending": "Nombres de rango propuestos por diseño, no confirmados: si HORECA ya usa otros nombres de oficio, deben reemplazarse aquí sin tocar la estructura (thresholds, colores, emblemas).",
+  "ranks": [
+    {
+      "id": "aprendiz",
+      "order": 1,
+      "name": "Aprendiz",
+      "pointsThreshold": 0,
+      "emblem": "plata",
+      "emblemAsset": "assets/emblems/emblema_maestro_plata.png",
+      "iconColor": "#8E86A0",
+      "iconBg": "#1E1929",
+      "iconBorder": "#3A3348",
+      "state": "unlocked"
+    },
+    {
+      "id": "ayudante",
+      "order": 2,
+      "name": "Ayudante",
+      "pointsThreshold": 500,
+      "emblem": "plata",
+      "emblemAsset": "assets/emblems/emblema_maestro_plata.png",
+      "iconColor": "#C29BE8",
+      "iconBg": "#231D30",
+      "iconBorder": "#5A1F91",
+      "state": "unlocked"
+    },
+    {
+      "id": "tecnico",
+      "order": 3,
+      "name": "Técnico",
+      "pointsThreshold": 1500,
+      "emblem": "azul",
+      "emblemAsset": "assets/emblems/emblema_maestro_azul.png",
+      "iconColor": "#DCC4F2",
+      "iconBg": "#3D1560",
+      "iconBorder": "#7A2FBF",
+      "state": "unlocked"
+    },
+    {
+      "id": "oficial",
+      "order": 4,
+      "name": "Oficial",
+      "pointsThreshold": 3000,
+      "emblem": "naranja",
+      "emblemAsset": "assets/emblems/emblema_maestro_naranja.png",
+      "iconColor": "#F7E3A6",
+      "iconBg": "linear-gradient(150deg,#7A2FBF,#3D1560)",
+      "iconBorder": "#E0B24E",
+      "state": "current",
+      "$note": "Ejemplo de rango 'actual' en el documento fuente: tarjeta destacada con borde oro 2px y glow (ver core.json → elevation.elev-glow)."
+    },
+    {
+      "id": "experto",
+      "order": 5,
+      "name": "Experto",
+      "pointsThreshold": 6000,
+      "emblem": "rojo",
+      "emblemAsset": "assets/emblems/emblema_maestro_rojo.png",
+      "iconColor": "#5C5570",
+      "iconBg": "#15121C",
+      "iconBorder": "#5C5570",
+      "iconBorderStyle": "dashed",
+      "state": "locked"
+    },
+    {
+      "id": "maestro",
+      "order": 6,
+      "name": "Maestro",
+      "pointsThreshold": 12000,
+      "emblem": "dorado",
+      "emblemAsset": "assets/emblems/emblema_maestro_dorado.png",
+      "iconColor": "#5C5570",
+      "iconBg": "#15121C",
+      "iconBorder": "#5C5570",
+      "iconBorderStyle": "dashed",
+      "state": "locked"
+    }
+  ],
+  "emblems": {
+    "$description": "Un mismo grabado en distintos acabados marca el rango del influenciador en perfil, ranking y credencial. Regla de asignación: el acabado escala en valor percibido: plata, azul, naranja, rojo, oro. Los emblemas de color que coinciden con el acento de una vertical no se usan como rango dentro de esa vertical, para no confundir identidad con logro.",
+    "plata": { "asset": "assets/emblems/emblema_maestro_plata.png", "ranks": ["aprendiz", "ayudante"], "label": "Rango 1–2" },
+    "azul": { "asset": "assets/emblems/emblema_maestro_azul.png", "ranks": ["tecnico"], "label": "Rango 3" },
+    "naranja": { "asset": "assets/emblems/emblema_maestro_naranja.png", "ranks": ["oficial"], "label": "Rango 4" },
+    "rojo": { "asset": "assets/emblems/emblema_maestro_rojo.png", "ranks": ["experto"], "label": "Rango 5" },
+    "dorado": { "asset": "assets/emblems/emblema_maestro_dorado.png", "ranks": ["maestro"], "label": "Rango 6 · Maestro" },
+    "rosa": { "asset": "assets/emblems/emblema_maestro_rosa.png", "ranks": [], "label": "Temporada · edición especial, no atado a un rango fijo" }
+  },
+  "emblemsPending": [
+    "emblema_maestro_verde", "emblema_maestro_teal", "emblema_maestro_blanco",
+    "emblema_maestro_negro_gris", "emblema_maestro_morado_transparente"
+  ],
+  "motion": {
+    "$description": "Animaciones del lenguaje de progresión.",
+    "accumulate": { "duration": "400ms", "easing": "ease-out", "description": "La cifra cuenta hacia arriba; el delta (+50) aparece y se disuelve." },
+    "unlock": { "duration": "300ms", "description": "Elemento pasa de borde punteado sin color a sólido con glow. Una sola vez, sin confeti." },
+    "levelUp": { "maxDuration": "3s", "description": "Único momento de pantalla completa: fondo púrpura profundo, rango en Cinzel dorado, un solo botón." },
+    "radialProgress": { "duration": "600ms", "easing": "ease-out", "trigger": "solo al entrar" }
+  }
+}

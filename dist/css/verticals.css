@@ -1,0 +1,45 @@
+[data-vertical="horeca"] {
+  --accent: #D69600;
+  --accent-light: #F0BE3A;
+  --accent-soft: rgba(214,150,0,0.16);
+}
+[data-vertical="tenderos"] {
+  --accent: #1E63C8;
+  --accent-light: #3B87E8;
+  --accent-soft: rgba(30,99,200,0.18);
+}
+[data-vertical="ferreteros"] {
+  --accent: #178C4E;
+  --accent-light: #2FB673;
+  --accent-soft: rgba(23,140,78,0.18);
+}
+[data-vertical="fuerza-ventas"] {
+  --accent: #C42B2B;
+  --accent-light: #E05252;
+  --accent-soft: rgba(196,43,43,0.18);
+}
+[data-vertical="mostrador"] {
+  --accent: #E06A1B;
+  --accent-light: #F08A3A;
+  --accent-soft: rgba(224,106,27,0.18);
+}
+[data-vertical="belleza"] {
+  --accent: #C41E63;
+  --accent-light: #E0447F;
+  --accent-soft: rgba(196,30,99,0.18);
+}
+[data-vertical="farmacia"] {
+  --accent: #0E8C8C;
+  --accent-light: #22ABAB;
+  --accent-soft: rgba(14,140,140,0.18);
+}
+[data-vertical="educacion"] {
+  --accent: #A6741F;
+  --accent-light: #C9922E;
+  --accent-soft: rgba(166,116,31,0.18);
+}
+[data-vertical="logistica"] {
+  --accent: #8A8F98;
+  --accent-light: #B4BAC4;
+  --accent-soft: rgba(138,143,152,0.18);
+}

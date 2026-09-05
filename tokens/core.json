@@ -1,0 +1,119 @@
+{
+  "$description": "Núcleo Maestry: color base, tipografía, espaciado, radios y elevación. Extraído de Design System Maestry.dc.html v0.2 · Septiembre 2026. Dueño: marca madre (nivel 1). No incluye acentos de vertical (ver verticals.json) ni mapeo semántico claro/oscuro (ver themes/*.json).",
+  "color": {
+    "ink": {
+      "$description": "Escala neutra. ink-0 es también 'paper/50' (crema/papel del tema claro). ink-900 es el negro núcleo del tema oscuro.",
+      "0": "#FBF9F5",
+      "100": "#E4DFD6",
+      "200": "#B9B2C4",
+      "300": "#8E86A0",
+      "400": "#5C5570",
+      "600": "#3A3348",
+      "800": "#1E1929",
+      "900": "#08070C"
+    },
+    "gold": {
+      "$description": "Oro Maestry. gold-500 (#E0B24E) es el token ancla citado en el documento ('gold/500'): acción primaria, nivel, logro. Contraste 8.4:1 sobre ink-900.",
+      "50": "#FDF6E3",
+      "100": "#F7E3A6",
+      "200": "#EFCE7A",
+      "500": "#E0B24E",
+      "600": "#C9922E",
+      "700": "#A6741F",
+      "800": "#7A5314",
+      "900": "#4A320B"
+    },
+    "purple": {
+      "$description": "Púrpura Maestría. purple-600 (#7A2FBF) es el token ancla citado en el documento ('purple/600'): desbloqueo, rango, momento de subir de nivel. Texto solo en purple-300 (#A96AE0) o más claro.",
+      "50": "#F4EBFB",
+      "100": "#DCC4F2",
+      "200": "#C29BE8",
+      "300": "#A96AE0",
+      "400": "#8B45CE",
+      "600": "#7A2FBF",
+      "700": "#5A1F91",
+      "900": "#3D1560"
+    },
+    "semantic": {
+      "$description": "Estados. Ratios de contraste medidos sobre ink-900 (fondo oscuro), citados en el documento.",
+      "success": { "value": "#3FBE86", "contrastOnDark": "7.2:1" },
+      "warning": { "value": "#F0A93A", "contrastOnDark": "8.9:1" },
+      "error": { "value": "#FF6B6B", "contrastOnDark": "6.1:1" },
+      "info": { "value": "#63A4FF", "contrastOnDark": "7.0:1" }
+    },
+    "rules": [
+      "Texto de cuerpo: mínimo 4.5:1. Títulos ≥24px: 3:1 (WCAG AA).",
+      "Oro sobre crema no cumple AA: usar gold-text-on-light (#8A6114) para texto ocre en tema claro.",
+      "El color nunca es el único portador de estado: siempre acompañar de ícono o etiqueta.",
+      "Oro y púrpura se reservan para progresión, recompensa y jerarquía máxima. Nunca como fondo de bloques largos de texto.",
+      "El glow dorado (elevation.elev-glow) es exclusivo de momentos de progresión: una vez por pantalla."
+    ]
+  },
+  "typography": {
+    "$description": "Cinzel (display serif, mayúsculas, tracking 0.04–0.08em, nunca bajo 20px) para marca/portadas/nombres de rango. Manrope (UI sans) para todo el producto y cuerpo de propuestas, pesos 400/600/800, sin cursivas. JetBrains Mono para cifras (saldo, puntos, timestamps): alinean en columna y no cambian de ancho al actualizar.",
+    "fontFamily": {
+      "display": "Cinzel, serif",
+      "ui": "Manrope, sans-serif",
+      "mono": "'JetBrains Mono', monospace"
+    },
+    "fontWeight": {
+      "display": { "regular": 400, "medium": 500, "semibold": 600, "bold": 700 },
+      "ui": { "regular": 400, "medium": 500, "semibold": 600, "bold": 700, "extrabold": 800 },
+      "mono": { "regular": 400, "medium": 500 }
+    },
+    "scale": {
+      "$description": "Escala mobile-first (referencia 360px). En escritorio (material B2B) multiplicar display y title por 1.35; el cuerpo no crece. Escala móvil: razón 1.22.",
+      "display-xl": { "fontFamily": "display", "fontWeight": 600, "fontSize": 34, "lineHeight": 38, "letterSpacing": "0.05em", "textTransform": "uppercase", "usage": "Rango alcanzado, portada" },
+      "title-lg": { "fontFamily": "ui", "fontWeight": 800, "fontSize": 28, "lineHeight": 34, "letterSpacing": "-0.02em", "usage": "Encabezado de pantalla" },
+      "title-md": { "fontFamily": "ui", "fontWeight": 700, "fontSize": 22, "lineHeight": 28, "letterSpacing": "-0.01em", "usage": "Sección, título de tarjeta grande" },
+      "body-lg": { "fontFamily": "ui", "fontWeight": 500, "fontSize": 17, "lineHeight": 26, "letterSpacing": "0", "usage": "Cuerpo por defecto en app" },
+      "body-md": { "fontFamily": "ui", "fontWeight": 400, "fontSize": 15, "lineHeight": 23, "letterSpacing": "0", "usage": "Secundario, apoyo" },
+      "label-sm": { "fontFamily": "ui", "fontWeight": 700, "fontSize": 13, "lineHeight": 16, "letterSpacing": "0.08em", "textTransform": "uppercase", "usage": "Etiquetas, chips, nav. Piso tipográfico absoluto." },
+      "numeric-xl": { "fontFamily": "mono", "fontWeight": 500, "fontSize": 32, "lineHeight": 34, "letterSpacing": "0", "usage": "Saldo y puntos, cifras tabulares" }
+    },
+    "i18n": [
+      "Español primario: tolerar textos ~20% más largos que en inglés.",
+      "Contenedores de etiqueta dimensionados al 120% del texto en inglés para no truncar en español.",
+      "Truncar solo en listas, nunca en botones."
+    ]
+  },
+  "spacing": {
+    "$description": "Base 4. Margen lateral móvil: 20px (no tokenizado como space-*, es regla de layout). Alto mínimo de objetivo táctil: 56px.",
+    "space-1": 4,
+    "space-2": 8,
+    "space-3": 12,
+    "space-4": 16,
+    "space-6": 24,
+    "space-8": 32,
+    "space-12": 48,
+    "layout": {
+      "mobileMargin": 20,
+      "minTouchTarget": 56
+    }
+  },
+  "radius": {
+    "radius-sm": { "value": 6, "usage": "input, chip" },
+    "radius-md": { "value": 12, "usage": "botón" },
+    "radius-lg": { "value": 18, "usage": "tarjeta" },
+    "radius-xl": { "value": 28, "usage": "hoja modal" },
+    "radius-full": { "value": 999, "usage": "pill, avatar, barra de progreso" }
+  },
+  "elevation": {
+    "$description": "En tema oscuro la jerarquía la da la superficie (ink-900 → surface #15121C → #1E1929), no la sombra.",
+    "elev-0": { "boxShadow": "none", "usage": "plano, solo borde" },
+    "elev-1": { "boxShadow": "0 2px 8px rgba(0,0,0,0.5)", "usage": "tarjeta" },
+    "elev-2": { "boxShadow": "0 12px 28px rgba(0,0,0,0.6)", "usage": "hoja, menú" },
+    "elev-glow": {
+      "border": "1px solid rgba(224,178,78,0.5)",
+      "boxShadow": "0 0 0 1px rgba(224,178,78,0.25), 0 8px 32px rgba(224,178,78,0.28)",
+      "usage": "logro, desbloqueo · exclusivo, una vez por pantalla"
+    }
+  },
+  "zIndex": {
+    "$description": "No especificado explícitamente en el documento fuente; valores por defecto razonables, a confirmar con producto.",
+    "nav": 100,
+    "notification": 500,
+    "modal": 900,
+    "levelUp": 1000
+  }
+}

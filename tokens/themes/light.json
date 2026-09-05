@@ -1,0 +1,14 @@
+{
+  "$description": "Mapeo semántico del tema claro (sección '08 · Temas'). Modo del consumidor final y del material impreso. El oro se oscurece para texto (gold-text-on-light) y los degradados se retiran.",
+  "semantic": {
+    "bg-base": { "value": "{color.ink.0}", "resolved": "#FBF9F5", "usage": "Fondo de pantalla (= paper/50)" },
+    "bg-surface": { "value": "#FFFFFF", "usage": "Tarjetas" },
+    "bg-surface-raised": { "value": "#EFEAE0", "usage": "Track de progreso" },
+    "text-primary": { "value": "#17131F", "usage": "≥12:1 de contraste" },
+    "text-secondary": { "value": "{color.ink.400}", "resolved": "#5C5570" },
+    "gold-text-on-light": { "value": "#8A6114", "usage": "Oro sobre crema no cumple AA (4.5:1): usar este valor para cualquier texto/etiqueta en tono ocre sobre fondo claro." },
+    "accent-action": { "value": "#341A04", "usage": "Botón primario invertido: chocolate HORECA sobre crema, no oro (el oro no cumple AA para texto/relleno sobre crema)." },
+    "border-subtle": { "value": "#E4DFD6", "usage": "1px, nunca 2" },
+    "cardShadow": { "value": "0 2px 8px rgba(52,26,4,0.06)" }
+  }
+}

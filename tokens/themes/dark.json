@@ -1,0 +1,14 @@
+{
+  "$description": "Mapeo semántico del tema oscuro (sección '08 · Temas'). Modo por defecto del colaborador (turnos de noche, ahorro de batería). Mismos tokens núcleo que el tema claro, distinto mapeo.",
+  "semantic": {
+    "bg-base": { "value": "{color.ink.900}", "resolved": "#08070C", "usage": "Fondo de pantalla" },
+    "bg-surface": { "value": "#15121C", "usage": "Tarjetas" },
+    "bg-surface-raised": { "value": "#1E1929", "usage": "Track de progreso, chips inactivos, hoja modal" },
+    "text-primary": { "value": "#F5F1EA", "usage": "≥12:1 de contraste" },
+    "text-secondary": { "value": "{color.ink.200}", "resolved": "#B9B2C4" },
+    "text-muted": { "value": "{color.ink.300}", "resolved": "#8E86A0" },
+    "accent-action": { "value": "{color.gold.500}", "resolved": "#E0B24E", "usage": "Acción primaria" },
+    "border-subtle": { "value": "#2C2438", "usage": "1px, nunca 2" },
+    "surfaceHierarchyNote": "La jerarquía la da la superficie (bg-base → bg-surface → bg-surface-raised), no la sombra."
+  }
+}

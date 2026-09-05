@@ -1,0 +1,32 @@
+[data-rank="aprendiz"] {
+  --rank-icon-color: #8E86A0;
+  --rank-icon-bg: #1E1929;
+  --rank-icon-border: #3A3348;
+}
+[data-rank="ayudante"] {
+  --rank-icon-color: #C29BE8;
+  --rank-icon-bg: #231D30;
+  --rank-icon-border: #5A1F91;
+}
+[data-rank="tecnico"] {
+  --rank-icon-color: #DCC4F2;
+  --rank-icon-bg: #3D1560;
+  --rank-icon-border: #7A2FBF;
+}
+[data-rank="oficial"] {
+  --rank-icon-color: #F7E3A6;
+  --rank-icon-bg: linear-gradient(150deg,#7A2FBF,#3D1560);
+  --rank-icon-border: #E0B24E;
+}
+[data-rank="experto"] {
+  --rank-icon-color: #5C5570;
+  --rank-icon-bg: #15121C;
+  --rank-icon-border: #5C5570;
+  --rank-icon-border-style: dashed;
+}
+[data-rank="maestro"] {
+  --rank-icon-color: #5C5570;
+  --rank-icon-bg: #15121C;
+  --rank-icon-border: #5C5570;
+  --rank-icon-border-style: dashed;
+}

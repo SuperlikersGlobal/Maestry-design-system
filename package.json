@@ -1,0 +1,15 @@
+{
+  "name": "@maestry/design-system",
+  "version": "0.2.0",
+  "description": "Design tokens del núcleo Maestry: color, tipografía, espaciado, radios, elevación, acentos de vertical y lenguaje de progresión (rangos/emblemas). Agnóstico de framework — JSON + CSS custom properties.",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build-tokens.mjs"
+  },
+  "files": [
+    "tokens",
+    "dist",
+    "assets"
+  ]
+}

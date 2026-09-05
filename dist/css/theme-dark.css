@@ -1,0 +1,10 @@
+:root, [data-theme="dark"] {
+  --bg-base: #08070C;
+  --bg-surface: #15121C;
+  --bg-surface-raised: #1E1929;
+  --text-primary: #F5F1EA;
+  --text-secondary: #B9B2C4;
+  --text-muted: #8E86A0;
+  --accent-action: #E0B24E;
+  --border-subtle: #2C2438;
+}

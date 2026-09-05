@@ -1,0 +1,11 @@
+[data-theme="light"] {
+  --bg-base: #FBF9F5;
+  --bg-surface: #FFFFFF;
+  --bg-surface-raised: #EFEAE0;
+  --text-primary: #17131F;
+  --text-secondary: #5C5570;
+  --gold-text-on-light: #8A6114;
+  --accent-action: #341A04;
+  --border-subtle: #E4DFD6;
+  --cardShadow: 0 2px 8px rgba(52,26,4,0.06);
+}
